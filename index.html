@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+<div id="data"></div>
+<script>
+var stuff = location.href.split("?data=");
+stuff.shift();
+stuff.join("");
+stuff = decodeURI(stuff);
+document.getElementById("data").innerHTML = stuff;
+</script>
+</body>
+</html>
